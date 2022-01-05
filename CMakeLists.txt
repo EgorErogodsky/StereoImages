@@ -16,6 +16,7 @@ add_library (Visualize STATIC Visualize.cpp)
 add_library (GetDisparityMap STATIC GetDisparityMap.cpp)
 add_library (CreatePointCloud STATIC CreatePointCloud.cpp)
 target_link_libraries (StereoImages CreatePointCloud Visualize SplitImage GetDisparityMap)
+target_link_libraries (GetDisparityMap SplitImage)
 
 find_package (PCL REQUIRED)
 include_directories (${PCL_INCLUDE_DIRS})
