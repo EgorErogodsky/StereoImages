@@ -1,7 +1,7 @@
 #include "CreatePointCloud.h"
 
-// Создание облака точек из карты глубины.
-// Фон не отображается.
+// РЎРѕР·РґР°РЅРёРµ РѕР±Р»Р°РєР° С‚РѕС‡РµРє РёР· РєР°СЂС‚С‹ РіР»СѓР±РёРЅС‹.
+// Р¤РѕРЅ РЅРµ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ.
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr CreatePointCloud(Mat disparityMap, Mat img)
 {
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr pointCloud(new pcl::PointCloud<pcl::PointXYZRGB>());
