@@ -1,5 +1,4 @@
 ﻿#include "GetDisparityMap.h"
-#include "SplitImage.h"
 
 // Получение карты глубины мнимого изображения.
 Mat GetDisparityMap(Mat& img)
